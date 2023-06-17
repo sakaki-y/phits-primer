@@ -1,12 +1,14 @@
-PHITSインプットファイルの例
+PHITSの使い方
 ##############################
 
 
 .. toctree::
-   :maxdepth: 1
+   :titlesonly:
 
    /tree_samples/0/main
    /tree_samples/0/main2
+
+PHITSインプットの例
 
 .. toctree::
    :maxdepth: 1
