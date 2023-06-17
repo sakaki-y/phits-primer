@@ -1,0 +1,87 @@
+宇宙線を空から降らせる
+###############################################################
+
+* 参考
+
+  - phits/lecture/advanced/cosmicray
+  - マニュアル 5.3.19.9 章
+
+* 半径200cmの球殻から大気中の宇宙線を2000発降らせている。スペクトルの設定は以下。
+
+  - 緯度(glat)  = 33   (度)
+  - 経度(glong) = 130  (度)
+  - 高度(alti)  = 0    (km)
+  - これは佐賀市の場合
+
+* 例としてミューオンと中性子だけ降らせている。
+
+* cell=21が地上。22が地下。22は物質番号 -1 を割り当てて下からの成分を完全にカットした。
+
+* 鉛ガラス検出器（cell=1）を地上に置いた。
+
+
+---------
+
+**ミューオン** (2d_xz_muon.eps)
+
+.. figure:: 2d_xz_muon.gif
+  :align: center
+
+---------
+
+**中性子** (2d_xz_neutron.eps)
+
+.. figure:: 2d_xz_neutron.gif
+  :align: center
+
+---------
+
+* (energy.eps) 地上(cell=21)における粒子のエネルギー分布。
+
+.. image:: energy.png
+  :align: center
+  :width: 400
+
+---------
+
+* (angle.eps) 地上(cell=21)から地下(22)に入る時の粒子の角度分布。中性子のほうがミューオンよりも角度が大きい。
+
+.. image:: angle.png
+  :align: center
+  :width: 400
+
+---------
+
+* (deposit.eps) 鉛ガラス(cell=1)のエネルギー付与分布。
+
+統計が少ない。解決方法は例えば
+
+  - ``maxcas`` を増やして計算回数を上げる
+  - 宇宙線が発生する球殻の半径 ``c1`` を小さくする
+  - 鉛ガラスを複数置く
+
+.. image:: deposit.png
+  :align: center
+  :width: 400
+
+
+  
+
+main.inp
+----------------------
+
+.. include:: main.inp
+  :literal:
+
+source.inp
+----------------------
+
+.. include:: source.inp
+  :literal:
+
+2d_xz.inp
+----------------------
+
+.. include:: 2d_xz.inp
+  :literal:
+

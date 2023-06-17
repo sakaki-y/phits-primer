@@ -1,0 +1,35 @@
+電子を水に打ち込む
+###############################################################
+
+* 幅100cm、長さ400cmの直方体の水(cell=1)に、左から 1 GeV の電子を1発打ち込んでみた。
+
+----------------------
+
+.. figure:: 2d_xz_e-.gif
+  :align: center
+
+  **電子** (2d_xz_e-.eps)
+
+
+.. figure:: 2d_xz_e+.gif
+  :align: center
+
+  **陽電子** (2d_xz_e+.eps)
+
+
+.. figure:: 2d_xz_photon.gif
+  :align: center
+
+  **光子** (2d_xz_photon.eps)
+
+
+インプットファイル
+----------------------
+
+.. include:: main.inp
+  :literal:
+
+
+
+
+

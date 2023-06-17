@@ -1,0 +1,29 @@
+PHITSインプットファイルの例
+##############################
+
+
+.. toctree::
+   :maxdepth: 1
+
+   /tree_samples/0/main
+   /tree_samples/0/main2
+
+.. toctree::
+   :maxdepth: 1
+
+   /tree_samples/1_electron/main
+   /tree_samples/cosmic/main
+   /tree_samples/tuika_yotei
+
+.. toctree::
+   :caption: その他
+   :hidden:
+
+   /tree_others/contact
+
+
+
+
+
+
+

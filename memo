@@ -1,0 +1,6 @@
+make html
+
+make clean
+
+open build/html/index.html
+
