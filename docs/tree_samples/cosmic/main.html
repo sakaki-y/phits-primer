@@ -105,38 +105,90 @@
 <li><p>鉛ガラス検出器（cell=1）を地上に置いた。</p></li>
 </ul>
 <hr class="docutils" />
-<p><strong>ミューオン</strong> (2d_xz_muon.eps)</p>
+<p><strong>ミューオン</strong> (<code class="docutils literal notranslate"><span class="pre">2d_xz_muon.eps</span></code>)</p>
 <figure class="align-center">
 <img alt="../../_images/2d_xz_muon.gif" src="../../_images/2d_xz_muon.gif" />
 </figure>
 <hr class="docutils" />
-<p><strong>中性子</strong> (2d_xz_neutron.eps)</p>
+<p><strong>中性子</strong> (<code class="docutils literal notranslate"><span class="pre">2d_xz_neutron.eps</span></code>)</p>
 <figure class="align-center">
 <img alt="../../_images/2d_xz_neutron.gif" src="../../_images/2d_xz_neutron.gif" />
 </figure>
 <hr class="docutils" />
+<p><code class="docutils literal notranslate"><span class="pre">energy.eps</span></code></p>
 <ul class="simple">
-<li><p>(energy.eps) 地上(cell=21)における粒子のエネルギー分布。</p></li>
+<li><p>地上(cell=21)における粒子のエネルギー分布。</p></li>
 </ul>
 <a class="reference internal image-reference" href="../../_images/energy.png"><img alt="../../_images/energy.png" class="align-center" src="../../_images/energy.png" style="width: 400px;" /></a>
 <hr class="docutils" />
+<p><code class="docutils literal notranslate"><span class="pre">angle.eps</span></code></p>
 <ul class="simple">
-<li><p>(angle.eps) 地上(cell=21)から地下(22)に入る時の粒子の角度分布。中性子のほうがミューオンよりも角度が大きい。</p></li>
+<li><p>地上(cell=21)から地下(22)に入る時の粒子の角度分布。中性子のほうがミューオンよりも角度が大きい。</p></li>
 </ul>
 <a class="reference internal image-reference" href="../../_images/angle.png"><img alt="../../_images/angle.png" class="align-center" src="../../_images/angle.png" style="width: 400px;" /></a>
 <hr class="docutils" />
+<p><code class="docutils literal notranslate"><span class="pre">deposit.eps</span></code></p>
 <ul class="simple">
-<li><p>(deposit.eps) 鉛ガラス(cell=1)のエネルギー付与分布。</p></li>
-</ul>
-<p>統計が少ない。解決方法は例えば</p>
-<blockquote>
-<div><ul class="simple">
+<li><p>鉛ガラス(cell=1)のエネルギー付与分布。</p></li>
+<li><p>統計が少ない。解決方法は例えば</p>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">maxcas</span></code> を増やして計算回数を上げる</p></li>
 <li><p>宇宙線が発生する球殻の半径 <code class="docutils literal notranslate"><span class="pre">c1</span></code> を小さくする</p></li>
 <li><p>鉛ガラスを複数置く</p></li>
 </ul>
-</div></blockquote>
+</li>
+</ul>
 <a class="reference internal image-reference" href="../../_images/deposit.png"><img alt="../../_images/deposit.png" class="align-center" src="../../_images/deposit.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+<p><code class="docutils literal notranslate"><span class="pre">into_detector_dmp.out</span></code></p>
+<ul class="simple">
+<li><p>検出器(cell=1)に入った粒子の情報をテキストファイル（<code class="docutils literal notranslate"><span class="pre">into_detector_dmp.out</span></code>）に書き出している。</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="o">-</span><span class="mf">1.300000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>   <span class="mf">5.999999999683743</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">3.167490567208137</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.400311182461877</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">3.162570913876687</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">4.350904000259421</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">8.430170792767353</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">5.043608622953946</span><span class="n">D</span><span class="o">+</span><span class="mi">02</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">6.261725450254336</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">7.440000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">02</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>
+  <span class="o">-</span><span class="mf">1.300000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>   <span class="mf">4.270813381084424</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">5.999999999166689</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">2.737788156725464</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>   <span class="mf">4.870208692571157</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">8.333107648138632</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">2.615412819295985</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">1.152322691655301</span><span class="n">D</span><span class="o">+</span><span class="mi">04</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">6.276482146981324</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">8.670000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">02</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>
+  <span class="o">-</span><span class="mf">1.300000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">5.999999999571961</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>  <span class="o">-</span><span class="mf">3.746179009237953</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">2.902283900132777</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>   <span class="mf">4.280392466046081</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">5.582329588916357</span><span class="n">D</span><span class="o">-</span><span class="mi">02</span>  <span class="o">-</span><span class="mf">9.020344577687874</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">1.024044951552910</span><span class="n">D</span><span class="o">+</span><span class="mi">04</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">5.713130883858525</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.014000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>
+  <span class="o">-</span><span class="mf">1.300000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>   <span class="mf">1.363282460846900</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">5.999999999579546</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">2.125876286168722</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">3.618266020839387</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">4.204536988867433</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">8.320457902765009</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">7.622341503246878</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">5.976120951789371</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.041000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>
+  <span class="o">-</span><span class="mf">1.300000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>   <span class="mf">2.324424479812270</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">5.999999999332699</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">6.830101307872464</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>  <span class="o">-</span><span class="mf">2.182880564808399</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">6.673006902635852</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">7.120815354800041</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">3.581966376533930</span><span class="n">D</span><span class="o">+</span><span class="mi">04</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">6.358585399034658</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.170000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>
+   <span class="mf">2.112000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">2.987449763408414</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>  <span class="o">-</span><span class="mf">5.999999999100431</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.345475335831164</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">4.317182097982893</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">8.995691624174087</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">6.629260408372918</span><span class="n">D</span><span class="o">-</span><span class="mi">02</span>   <span class="mf">3.916245759037464</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">7.036389105658317</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>   <span class="mf">1.272000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>
+   <span class="mf">2.112000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">2.605150703877696</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">5.999999999260335</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.536708328395350</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>   <span class="mf">4.251299510657168</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">7.396648733591683</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">5.216899460651190</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">8.222506588419546</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.502141858288128</span><span class="n">D</span><span class="o">+</span><span class="mi">02</span>   <span class="mf">1.449000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>
+  <span class="o">-</span><span class="mf">1.300000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>   <span class="mf">5.999999999524234</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>  <span class="o">-</span><span class="mf">3.724896567140975</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.773088121318878</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>  <span class="o">-</span><span class="mf">4.757660453435825</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">4.631870654161487</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">7.477328483685229</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">4.150098315192381</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">6.474771844197241</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.475000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>
+   <span class="mf">1.300000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>   <span class="mf">5.999999999386787</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.074583986118774</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.932136694372502</span><span class="n">D</span><span class="o">+</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">6.132135948588188</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">4.911351716966157</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>  <span class="o">-</span><span class="mf">6.186722316403577</span><span class="n">D</span><span class="o">-</span><span class="mi">01</span>   <span class="mf">5.864092166797841</span><span class="n">D</span><span class="o">+</span><span class="mi">02</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">6.192399315136884</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>   <span class="mf">1.859000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">03</span>   <span class="mf">1.000000000000000</span><span class="n">D</span><span class="o">+</span><span class="mi">00</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>この場合、各行に 12 列の情報が書かれている。どの情報を書き出すかは以下で指定されている。</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[ t-cross ]
+     file = into_detector.out
+     part = all
+
+     mesh = reg
+      reg = 1 $ number of crossing regions
+      non     r-from  r-to  area
+        1     21      1     1.0
+
+ e-type = 2            # e-mesh is log given by emin, emax and ne
+   emin = 0           # minimum value of e-mesh points
+   emax = 1e+10           # maximum value of e-mesh points
+     ne = 1            # number of e-mesh points
+   unit = 1            # 1:[1/cm^2/source]
+   axis = eng
+ output = current            # surface crossing flux
+
+   epsout =    0
+     dump =   -12           # (D=0) number of dumped data, &lt;0: ascii, &gt;0: binary
+                1   2   3   4   5   6   7   8   9   10   18   19
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>dumpデータに関しては例えば以下を参照。</p>
+<ul>
+<li><p>phits/lecture/advanced/sourceB/phits-lec-sourceB-jp.pptx</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/dump.png"><img alt="../../_images/dump.png" class="align-center" src="../../_images/dump.png" style="width: 500px;" /></a>
+<hr class="docutils" />
 <section id="main-inp">
 <h2>main.inp<a class="headerlink" href="#main-inp" title="この見出しへのパーマリンク"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$======================================
@@ -293,8 +345,8 @@ $======================================
    epsout =    0
      dump =   -12           # (D=0) number of dumped data, &lt;0: ascii, &gt;0: binary
                 1   2   3   4   5   6   7   8   9   10   18   19
-$ kf x y z u v w e wt time c1 c2 c3 sx sy sz name nocas nobch no
 $  1 2 3 4 5 6 7 8  9   10 11 12 13 14 15 16   17    18    19 20
+$ kf x y z u v w e wt time c1 c2 c3 sx sy sz name nocas nobch no
 </pre></div>
 </div>
 </section>

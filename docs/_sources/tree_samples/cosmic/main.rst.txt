@@ -22,21 +22,23 @@
 
 ---------
 
-**ミューオン** (2d_xz_muon.eps)
+**ミューオン** (``2d_xz_muon.eps``)
 
 .. figure:: 2d_xz_muon.gif
   :align: center
 
 ---------
 
-**中性子** (2d_xz_neutron.eps)
+**中性子** (``2d_xz_neutron.eps``)
 
 .. figure:: 2d_xz_neutron.gif
   :align: center
 
 ---------
 
-* (energy.eps) 地上(cell=21)における粒子のエネルギー分布。
+``energy.eps``
+
+* 地上(cell=21)における粒子のエネルギー分布。
 
 .. image:: energy.png
   :align: center
@@ -44,7 +46,9 @@
 
 ---------
 
-* (angle.eps) 地上(cell=21)から地下(22)に入る時の粒子の角度分布。中性子のほうがミューオンよりも角度が大きい。
+``angle.eps``
+
+* 地上(cell=21)から地下(22)に入る時の粒子の角度分布。中性子のほうがミューオンよりも角度が大きい。
 
 .. image:: angle.png
   :align: center
@@ -52,20 +56,64 @@
 
 ---------
 
-* (deposit.eps) 鉛ガラス(cell=1)のエネルギー付与分布。
+``deposit.eps``
 
-統計が少ない。解決方法は例えば
+* 鉛ガラス(cell=1)のエネルギー付与分布。
 
-  - ``maxcas`` を増やして計算回数を上げる
-  - 宇宙線が発生する球殻の半径 ``c1`` を小さくする
-  - 鉛ガラスを複数置く
+* 統計が少ない。解決方法は例えば
+
+  * ``maxcas`` を増やして計算回数を上げる
+  * 宇宙線が発生する球殻の半径 ``c1`` を小さくする
+  * 鉛ガラスを複数置く
 
 .. image:: deposit.png
   :align: center
   :width: 400
 
+---------
 
-  
+``into_detector_dmp.out``
+
+* 検出器(cell=1)に入った粒子の情報をテキストファイル（``into_detector_dmp.out``）に書き出している。
+
+.. include:: into_detector_dmp.out
+  :literal:
+
+* この場合、各行に 12 列の情報が書かれている。どの情報を書き出すかは以下で指定されている。
+
+.. code-block::
+
+  [ t-cross ]
+       file = into_detector.out
+       part = all
+
+       mesh = reg
+        reg = 1 $ number of crossing regions
+        non     r-from  r-to  area
+          1     21      1     1.0
+
+   e-type = 2            # e-mesh is log given by emin, emax and ne
+     emin = 0           # minimum value of e-mesh points
+     emax = 1e+10           # maximum value of e-mesh points
+       ne = 1            # number of e-mesh points
+     unit = 1            # 1:[1/cm^2/source]
+     axis = eng
+   output = current            # surface crossing flux
+
+     epsout =    0
+       dump =   -12           # (D=0) number of dumped data, <0: ascii, >0: binary
+                  1   2   3   4   5   6   7   8   9   10   18   19
+
+* dumpデータに関しては例えば以下を参照。
+
+  * phits/lecture/advanced/sourceB/phits-lec-sourceB-jp.pptx
+
+
+.. image:: dump.png
+  :align: center
+  :width: 500
+
+----------------------
 
 main.inp
 ----------------------
