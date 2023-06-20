@@ -72,6 +72,14 @@
 
 ---------
 
+（参考：統計を増やした ``deposit.eps``）
+
+.. image:: deposit_high.png
+  :align: center
+  :width: 400
+
+---------
+
 ``into_detector_dmp.out``
 
 * 検出器(cell=1)に入った粒子の情報をテキストファイル（``into_detector_dmp.out``）に書き出している。
