@@ -15,6 +15,7 @@ PHITSインプットの例
 
    /tree_samples/1_electron/main
    /tree_samples/cosmic/main
+   /tree_samples/new_boson/main
    /tree_samples/tuika_yotei
 
 .. toctree::
